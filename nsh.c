@@ -27,7 +27,7 @@ char *nsh_builtin_strs[] = {
 
 char *nsh_builtin_descs[] = {
     "Usage: 'help'       -   displays information about the shell",
-    "Usage: 'cd [args]'  -   change the present working directory to the path specified by args",
+    "Usage: 'cd [args]'  -   changes the present working directory to the path specified by args",
     "Usage: 'exit'       -   exits the shell"
 };
 
