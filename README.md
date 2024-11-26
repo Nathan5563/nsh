@@ -20,7 +20,7 @@ make
 ## built-in functions
 The shell currently supports the following functions:
 ```
-help   -  Usage: 'help'       -   displays information about the built-in functions.
-cd     -  Usage: 'cd [args]'  -   change the present working directory to the path specified by args.
+help   -  Usage: 'help'       -   displays information about the shell.
+cd     -  Usage: 'cd [args]'  -   changes the present working directory to the path specified by args.
 exit   -  Usage: 'exit'       -   exits the shell.
 ```
