@@ -26,9 +26,9 @@ char *nsh_builtin_strs[] = {
 };
 
 char *nsh_builtin_descs[] = {
-    "prints information about the shell",
-    "changes the present working directory to the passed argument",
-    "exits the shell"
+    "Usage: 'help'       -   displays information about the shell",
+    "Usage: 'cd [args]'  -   change the present working directory to the path specified by args",
+    "Usage: 'exit'       -   exits the shell"
 };
 
 int (*nsh_builtin_funcs[])(char **) = {
@@ -58,8 +58,8 @@ int nsh_help(char **args)
     size_t num_builtins = nsh_num_builtins();
     for (size_t i = 0; i < num_builtins; ++i)
     {
-        fprintf(stdout, "%s%*s-     %s.\n", nsh_builtin_strs[i], 
-                (int)(10 - strlen(nsh_builtin_strs[i])), "", nsh_builtin_descs[i]);
+        fprintf(stdout, "%s%*s-  %s.\n", nsh_builtin_strs[i], 
+                (int)(7 - strlen(nsh_builtin_strs[i])), "", nsh_builtin_descs[i]);
     }
     return 1;
 }
